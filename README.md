@@ -54,3 +54,84 @@ This project simulates a monthly payroll for employees, including calculations f
 | Max Total Pay         | £4,540.00  |
 | Min Total Pay         | £2,709.00  |
 
+
+## 📝 Project 2: Gradebook Assessment Tracker
+
+### 🎯 Description
+
+This gradebook simulates employee or student evaluation based on multiple tests. It calculates scores, percentages, and automatically flags underperformance using logical functions. It also visualizes performance across key categories using charts.
+
+---
+
+### 📁 Excel Features Used
+
+* ✅ **Conditional Formatting**
+
+  * Highlights low scores automatically
+  * Makes failures visually stand out
+
+* ✅ **Logical Functions**
+
+  * `OR()` and `IF()` used to trigger a “Fire Employee” flag
+  * Example logic:
+
+    ```excel
+    =OR(Safety%<60%, Philosophy%<60%, Financial%<60%, DrugTest<>1)
+    ```
+
+* ✅ **Data Transformation**
+
+  * Raw scores converted to percentages for clear comparison
+
+* ✅ **Summary Metrics**
+
+  * `MAX`, `MIN`, and `AVERAGE` calculated for each test
+
+* ✅ **Data Visualization**
+
+  * Column charts created for each test category:
+
+    * **Company Philosophy Test**
+    * **Safety Test**
+    * **Financial Skills Test**
+
+---
+
+### 📊 Performance Charts
+
+#### 📘 Company Philosophy Test
+
+![Excel/Graphs/philosophy.png](Graphs/philosophy.png)
+
+#### 🚧 Safety Test
+
+![!\[Safety Test\](./path/to/your/image2.png)](Graphs/safety_test.png)
+
+#### 💰 Financial Skills Test
+
+![!\[Financial Skills Test\](Excel/Graphs/financial.png)](Graphs/financial.png)
+
+---
+
+### 🧠 Logic for Termination Flag
+
+An employee is marked `TRUE` in the **"Fire Employee"** column if **any** of the following conditions are met:
+
+* Safety Test score < 50%
+* Company Philosophy Test score < 50%
+* Financial Skills Test score < 50%
+* Drug Test score ≠ 1 (failed)
+
+This helps demonstrate real-world logical decision-making automation using Excel functions.
+
+---
+
+### 📌 Key Stats
+
+| Metric                 | Safety Test | Company Philosophy | Financial Skills | Drug Test |
+| ---------------------- | ----------- | ------------------ | ---------------- | --------- |
+| **Max Score**          | 10          | 20                 | 100              | 1         |
+| **Min Score**          | 1           | 3                  | 10               | 0         |
+| **Average Score**      | 6.00        | 12.26              | 60.84            | 0.74      |
+| **Average Percentage** | 60%         | 61%                | 61%              | 74%       |
+
